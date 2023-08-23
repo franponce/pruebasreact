@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react";
+import Cuenta from "./CuentaProps";
 
 export default function Hooks() {
     const [cuenta, setCuenta] = useState(0);
@@ -9,10 +10,7 @@ export default function Hooks() {
     return (
         <div>
             {cuenta == 0 ?(<h1>Arranquemos a contar a ver si nos dormimos</h1>):(
-            <div>
-            {cuenta>1 ?(<h1>Contamos {cuenta} obejitas.</h1>):(<h1>Contamos {cuenta} obejita.</h1>)}
-            {cuenta && <h4>Que bueno a ver si nos dormimos</h4>}
-            </div>
+            <Cuenta cuenta={cuenta}></Cuenta>
             )}
             <button onClick={handleClick} type="button" class="btn btn-success">
                 Contar otra
