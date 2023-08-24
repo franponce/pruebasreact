@@ -3,15 +3,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Somos from '../containers/Somos';
 import Home from '../containers/Home';
 import Contacto from '../containers/Contacto';
+import Layout from '../components/Layout';
 
 export default function App() {
   return (
   <BrowserRouter>
+  <Layout>
   <Routes>
   <Route path='/' element={<Home />} />
     <Route path='/somos' element={<Somos/>} />
     <Route path='/contacto' element={<Contacto/>} />
   </Routes>
+  </Layout>
   </BrowserRouter>
   );
 }
