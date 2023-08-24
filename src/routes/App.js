@@ -8,16 +8,16 @@ import Productos from '../containers/Productos';
 
 export default function App() {
   return (
-  <BrowserRouter>
-  <Layout>
-  <Routes>
-  <Route path='/' element={<Home />} />
-    <Route path='/somos' element={<Somos/>} />
-    <Route path='/contacto' element={<Contacto/>} />
-    <Route path='/producto' element={<Productos/>} />
-  </Routes>
-  </Layout>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/somos' element={<Somos />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/producto' element={<Productos />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
